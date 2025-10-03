@@ -4,7 +4,7 @@ import java.nio.file.*;
 public class Actividad2 {
 
     public static void main(String[] args) {
-        // OBTENGO EL DIRECTIO ACTUAL Y LO CONVIERTO EN RUTA RELATIVA
+        // OBTENGO EL DIRECTORIO ACTUAL Y LO CONVIERTO EN RUTA RELATIVA
         Path directorioTrabajo = Paths.get("").toAbsolutePath();
 
         System.out.println("Contenido del directorio: " + directorioTrabajo);
@@ -17,8 +17,8 @@ public class Actividad2 {
                     System.out.println("Archivo --> " + elementoDirectorio.getFileName());
                 }
             }
-        } catch (IOException e) {
-            System.out.println("Error al leer el directorio: " + e.getMessage());
+        } catch (IOException ioe) {
+            System.out.println("Error al leer el directorio. " + ioe.getMessage());
         }
     }
 }

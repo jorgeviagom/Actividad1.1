@@ -69,7 +69,6 @@ public class Actividad1 {
                     borrarDirectorio(archivo);
                 } else {
                     //SI ES UN ARCHIVO LO BORRA DIRECTAMENTE
-                    //BORRAR
                     Files.delete(archivo);
                 }
             }
