@@ -5,7 +5,7 @@ public class Actividad3 {
 
     public static void main(String[] args) {
         // OBTENGO EL DIRECTORIO ACTUAL Y LO CONVIERTO EN RUTA RELATIVA
-        Path directorioTrabajo = Paths.get("").toAbsolutePath(); // Paths.get("") devuelve el directorio actual del proyecto
+        Path directorioTrabajo = Paths.get("").toAbsolutePath(); //Paths.get("") DEVUELVE DIRECTORIO ACTUAL
 
         System.out.println("Contenido del directorio: " + directorioTrabajo);
 

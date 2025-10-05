@@ -8,7 +8,7 @@ public class Actividad1 {
         Path prueba = null;
         try {
             // CREAR CARPETA
-            prueba = Path.of("D:\\Users\\jorge.viagom", "Prueba");
+            prueba = Path.of("C:/Users/jvg10/IdeaProjects","Prueba");
 
             if (Files.notExists(prueba)) {
                 Files.createDirectory(prueba);
@@ -53,7 +53,7 @@ public class Actividad1 {
             System.out.println("Ha ocurrido un error: " + ioe.getMessage());
         }
 
-        // borrarDirectorio(prueba);
+        borrarDirectorio(prueba);
 
 
     }
